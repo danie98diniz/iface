@@ -109,6 +109,9 @@ public class Main {
                     System.out.println("You can chat with friends or others accounts registered");
                     ArrayList<String> FriendsList;
                     FriendsList = AccountsList.get(YourIndex).getFriendsList();
+                    if(FriendsList.size() > 0){
+                        System.out.println("friends:");
+                    }
 
                     if(FriendsList.size() > 0){ //print list of friends if you have more than 0
                         for(int i = 0; i < FriendsList.size(); i++){
